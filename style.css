@@ -45,13 +45,11 @@ width: 250px;
 }
 
 
-nav a{
+nav a, #contato a{
 
 text-decoration:none;
 
 color:white;
-
-margin-left:30px;
 
 font-weight:bold;
 
@@ -59,8 +57,12 @@ transition:.3s;
 
 }
 
+nav a{
 
-nav a:hover{
+margin-left:30px;
+}
+
+nav a:hover, #contato a:hover{
 
 color:#00ff00;
 
@@ -277,13 +279,14 @@ color:#ff6600;
 }
 
 
-#contato p{
+#contato p, #contato a{
 
 margin-bottom:15px;
 
 font-size:20px;
 
 }
+
 
 
 footer{
