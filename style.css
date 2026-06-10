@@ -1,85 +1,58 @@
 *{
-
 margin:0;
 padding:0;
 box-sizing:border-box;
-
 font-family:Arial,sans-serif;
+}
 
+html{
+scroll-behavior:smooth;
 }
 
 body{
-
 background:black;
 color:white;
-
 }
-
 
 header{
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 padding:20px 50px;
-
 background:#000;
-
 border-bottom:2px solid #00ff00;
-
 position:sticky;
-
 top:0;
-
+z-index:1000;
 }
-
 
 .logo img{
-
 height:180px;
-width: 250px;
-
+width:250px;
 }
 
-
-nav a, #contato a{
-
+nav a,
+#contato a{
 text-decoration:none;
-
 color:white;
-
 font-weight:bold;
-
 transition:.3s;
-
 }
 
 nav a{
-
-margin-left:30px;
+margin-left:25px;
 }
 
-nav a:hover, #contato a:hover{
-
+nav a:hover,
+#contato a:hover{
 color:#00ff00;
-
 }
-
-
 
 .hero{
-
 height:90vh;
-
 display:flex;
-
 align-items:center;
-
 padding:80px;
-
 background:
 linear-gradient(
 135deg,
@@ -87,254 +60,189 @@ linear-gradient(
 #111,
 #1a1a1a
 );
-
 }
-
 
 .texto{
-
-max-width:700px;
-
+max-width:800px;
 }
-
-
 
 .texto h1{
-
 font-size:60px;
-
 color:#00ff00;
-
 margin-bottom:20px;
-
 }
-
-
 
 .texto p{
-
 font-size:22px;
-
 line-height:1.6;
-
 color:#ddd;
-
 margin-bottom:30px;
-
 }
-
 
 button{
-
 background:#ff6600;
-
 color:white;
-
 padding:15px 30px;
-
 border:none;
-
 border-radius:10px;
-
 cursor:pointer;
-
 font-size:18px;
-
 transition:.3s;
-
 }
-
 
 button:hover{
-
 background:#00ff00;
-
 color:black;
-
 transform:scale(1.05);
-
 }
 
-
-
-#beneficios{
-
+#beneficios,
+#locais,
+#galeria,
+#depoimentos,
+#contato{
 padding:80px;
-
 text-align:center;
-
 }
 
-
-
-#beneficios h2{
-
+#beneficios h2,
+#locais h2,
+#galeria h2,
+#depoimentos h2,
+#faq h2,
+#contato h2{
 margin-bottom:40px;
-
 color:#ff6600;
-
 }
-
-
 
 .cards{
-
 display:flex;
-
+flex-wrap:wrap;
 gap:25px;
-
 justify-content:center;
-
 }
-
-
 
 .card{
-
 background:#151515;
-
 padding:30px;
-
 border-radius:15px;
-
 width:300px;
-
 border:1px solid #00ff00;
-
 transition:.3s;
-
 }
-
 
 .card:hover{
-
 transform:translateY(-10px);
-
 }
-
-
 
 .card h3{
-
+margin-top:15px;
 margin-bottom:15px;
-
 color:#00ff00;
-
 }
 
-
+.card p{
+line-height:1.6;
+}
 
 #faq{
-
 padding:80px;
-
 background:#111;
-
 }
-
-
-
-#faq h2{
-
-margin-bottom:30px;
-
-color:#ff6600;
-
-text-align:center;
-
-}
-
 
 .pergunta{
-
 margin-bottom:30px;
-
 padding:20px;
-
 background:#1a1a1a;
-
 border-left:5px solid #00ff00;
-
 border-radius:10px;
-
 }
 
-
-
-#contato{
-
-padding:80px;
-
-text-align:center;
-
+.pergunta h3{
+margin-bottom:10px;
+color:#00ff00;
 }
 
-
-#contato h2{
-
-margin-bottom:25px;
-
-color:#ff6600;
-
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-
-#contato p, #contato a{
-
-margin-bottom:15px;
-
-font-size:20px;
-
+.galeria img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+border:2px solid #00ff00;
+transition:.3s;
 }
 
+.galeria img:hover{
+transform:scale(1.03);
+}
 
+#contato a{
+display:inline-block;
+margin:10px;
+padding:15px 25px;
+border-radius:10px;
+background:#151515;
+border:1px solid #00ff00;
+}
+
+#contato a:hover{
+background:#00ff00;
+color:black;
+}
 
 footer{
-
 padding:30px;
-
 text-align:center;
-
 background:#000;
-
 border-top:2px solid #00ff00;
-
 }
-
-
 
 @media(max-width:768px){
 
 header{
-
 flex-direction:column;
-
 }
 
 nav{
-
 margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
 
+nav a{
+margin-left:0;
 }
 
 .cards{
-
 flex-direction:column;
-
 align-items:center;
-
 }
 
 .texto h1{
-
 font-size:40px;
+}
 
+.texto p{
+font-size:18px;
 }
 
 .hero{
-
 padding:40px;
+height:auto;
+min-height:80vh;
+}
 
+.logo img{
+width:180px;
+height:auto;
 }
 
 }
