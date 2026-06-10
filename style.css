@@ -14,6 +14,10 @@ background:black;
 color:white;
 }
 
+section{
+scroll-margin-top:220px;
+}
+
 header{
 display:flex;
 justify-content:space-between;
@@ -127,8 +131,13 @@ background:#151515;
 padding:30px;
 border-radius:15px;
 width:300px;
+min-height:350px;
 border:1px solid #00ff00;
 transition:.3s;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
 .card:hover{
@@ -243,6 +252,10 @@ min-height:80vh;
 .logo img{
 width:180px;
 height:auto;
+}
+
+section{
+scroll-margin-top:260px;
 }
 
 }
