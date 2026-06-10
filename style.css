@@ -122,16 +122,17 @@ color:#ff6600;
 .cards{
 display:flex;
 flex-wrap:wrap;
-gap:25px;
+gap:20px;
 justify-content:center;
+align-items:stretch;
 }
 
 .card{
 background:#151515;
-padding:30px;
+padding:25px;
 border-radius:15px;
-width:300px;
-min-height:350px;
+width:250px;
+min-height:320px;
 border:1px solid #00ff00;
 transition:.3s;
 
